@@ -43,7 +43,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 chalice_nice_nano.uf2
       - name: Archive (CHALICE)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: chalice_nice_nano.uf2
